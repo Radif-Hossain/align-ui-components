@@ -3063,3 +3063,288 @@
 /*    profile-configuration   end   */
 
 /*      checkbox   end    */
+
+/*     color picker   start   */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+#color-picker-example {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  width: 100%;
+  height: 100vh;
+  background-color: #ddd;
+}
+
+.color-spectrum {
+  display: flex;
+  width: 314px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0px -1px 1px -0.5px rgba(51, 51, 51, 0.06) inset,
+    0px 0px 0px 1px rgba(51, 51, 51, 0.04),
+    0px 1px 1px 0.5px rgba(51, 51, 51, 0.04),
+    0px 3px 3px -1.5px rgba(51, 51, 51, 0.02),
+    0px 6px 6px -3px rgba(51, 51, 51, 0.04),
+    0px 12px 12px -6px rgba(51, 51, 51, 0.04),
+    0px 24px 24px -12px rgba(51, 51, 51, 0.04),
+    0px 48px 48px -24px rgba(51, 51, 51, 0.04);
+}
+
+.color-spectrum-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+.spectrum-content-color-picker {
+  position: relative;
+  width: 100%;
+  height: 148px;
+  align-self: stretch;
+  border-radius: 10px;
+  background: linear-gradient(89deg, #fff 1.22%, rgba(255, 255, 255, 0) 50.03%),
+    #ee2121;
+}
+
+.spectrum-content-color-picker img {
+  position: absolute;
+  right: 6%;
+  top: 10%;
+}
+
+.spectrum-content-color-picker-black {
+  position: absolute;
+  bottom: 0;
+  width: 282px;
+  height: 115px;
+  border-radius: 10px;
+  background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.spectrum-content-color-slider {
+  position: relative;
+  height: 12px;
+  width: 100%;
+  border-radius: 96px;
+  background: linear-gradient(
+    270deg,
+    #f00000 0%,
+    #ff005e 4.69%,
+    #fc0072 4.7%,
+    #ea00fa 8.85%,
+    #e000fb 8.86%,
+    #9a00ff 13.02%,
+    #3100ff 18.23%,
+    #2d01ff 18.24%,
+    #060cff 23.44%,
+    #0431ff 23.45%,
+    #007cff 28.12%,
+    #008eff 33.33%,
+    #228bde 38.54%,
+    #00dbff 43.23%,
+    #00f5ff 47.92%,
+    #00ffb5 53.65%,
+    #00ff68 58.33%,
+    #0f2 64.06%,
+    #2aff00 69.27%,
+    #acff00 73.96%,
+    #f0f600 78.65%,
+    #ffc300 83.33%,
+    #ff8100 88.54%,
+    #ff4f00 94.79%,
+    #f00 100%
+  );
+}
+
+.spectrum-content-color-slider img {
+  position: absolute;
+  top: 0;
+  left: 1%;
+}
+
+.spectrum-content-color-input {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  color: #5c5c5c;
+  align-items: center;
+}
+
+.spectrum-content-color-input .spectrum-content-color-input-code {
+  display: flex;
+  gap: 8px;
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.spectrum-content-color-input-code .spectrum-content-color-input-code-img {
+  display: flex;
+  gap: 8px;
+  padding: 8px 10px;
+}
+
+.spectrum-content-color-input-code
+  .spectrum-content-color-input-code-percentage {
+  padding: 8px 10px;
+  border-left: 1px solid #ebebeb;
+}
+
+.color-spectrum-footer {
+  display: flex;
+  padding: 14px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  align-self: stretch;
+  border-top: 1px solid #ebebeb;
+}
+
+.color-spectrum-footer p {
+  color: #5c5c5c;
+  font-size: 14px;
+}
+
+/*       theme-colors    start   */
+.theme-colors {
+  width: 285px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0px -1px 1px -0.5px rgba(51, 51, 51, 0.06) inset,
+    0px 0px 0px 1px rgba(51, 51, 51, 0.04),
+    0px 1px 1px 0.5px rgba(51, 51, 51, 0.04),
+    0px 3px 3px -1.5px rgba(51, 51, 51, 0.02),
+    0px 6px 6px -3px rgba(51, 51, 51, 0.04),
+    0px 12px 12px -6px rgba(51, 51, 51, 0.04),
+    0px 24px 24px -12px rgba(51, 51, 51, 0.04),
+    0px 48px 48px -24px rgba(51, 51, 51, 0.04);
+}
+
+.theme-colors-header {
+  display: flex;
+  padding: 12px 20px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid var(--stroke-soft-200, #ebebeb);
+  background: var(--bg-white-0, #fff);
+  border-radius: 16px 16px 0 0;
+}
+
+.theme-colors-header p {
+  color: #171717;
+  font-size: 14px;
+}
+
+.theme-color-content {
+  display: flex;
+  padding: 16px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  border-bottom: 1px solid var(--stroke-soft-200, #ebebeb);
+  background: var(--bg-white-0, #fff);
+  width: 100%;
+  border-radius: 0 0 16px 16px;
+}
+
+.theme-color-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.theme-color-title p {
+  color: #5c5c5c;
+}
+
+.theme-color-title span {
+  color: #335cff;
+}
+
+.theme-all-colors {
+  display: flex;
+  width: 242px;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.theme-color-dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 96px;
+  border: 1px solid var(--stroke-soft-200, #ebebeb);
+  background: var(--static-static-white, #fff);
+}
+
+.theme-color-dot-meutral-gray-200 {
+  background-color: #ebebeb;
+}
+
+.theme-color-dot-meutral-gray-300 {
+  background-color: #d1d1d1;
+}
+
+.theme-color-dot-meutral-gray-400 {
+  background-color: #a3a3a3;
+}
+
+.theme-color-dot-meutral-gray-600 {
+  background-color: #5c5c5c;
+}
+
+.theme-color-dot-meutral-gray-700 {
+  background-color: #333333;
+}
+
+.theme-color-dot-blue {
+  background-color: #335cff;
+}
+
+.theme-color-dot-sky {
+  background-color: #47c2ff;
+}
+
+.theme-color-dot-purple {
+  background-color: #7d52f4;
+}
+
+.theme-color-dot-yellow {
+  background-color: #f6b51e;
+}
+
+.theme-color-dot-pink {
+  background-color: #fb4ba3;
+}
+
+.theme-color-footer p {
+  font-size: 12px;
+  color: #a3a3a3;
+}
+
+/*       theme-colors    end   */
+
+/* color picker end  */
