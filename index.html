@@ -3,7 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Components</title>
+    <style>
+      #components {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      nav {
+        width: 60%;
+        border: 1px solid #dddd;
+        box-shadow: 2px 2px 5px #ddd;
+        border-radius: 10px;
+      }
+
+      nav ul {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        gap: 60px;
+        flex-wrap: wrap;
+        list-style: none;
+      }
+
+      nav ul li {
+        justify-self: center;
+      }
+
+      nav ul li a {
+        text-decoration-color: blue;
+        color: #171717;
+        text-transform: capitalize;
+        font-weight: 600;
+      }
+
+      nav ul li a:hover {
+        color: aqua;
+        transition: all 0.3s linear;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div id="components">
+      <nav>
+        <ul>
+          <li><a href="/accordion/"> Accordion</a></li>
+          <li><a href="/activity-feed/">Activity-Feed</a></li>
+          <li>
+            <a href="/Alert-notifations-toast/">Alert-notifations-toast</a>
+          </li>
+          <li><a href="/avatar/">Avatar</a></li>
+          <li><a href="/badge/">Badge</a></li>
+          <li><a href="/banner/">Banner</a></li>
+          <li><a href="/breadcrumbs/">Breadcrumbs</a></li>
+          <li><a href="/button/">Button</a></li>
+          <li><a href="button-group/">Button-Group</a></li>
+          <li><a href="checkbox/">Checkbox</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
 </html>
