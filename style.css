@@ -3348,3 +3348,180 @@
 /*       theme-colors    end   */
 
 /* color picker end  */
+
+/*        contect    divider    start    */
+
+#contect-divider-example {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd;
+}
+
+#contect-divider-example .dividers {
+  display: flex;
+  width: 480px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.divider-add-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dividers .divider-add-button-1 {
+  width: 214px;
+  height: 1px;
+  background-color: #ebebeb;
+}
+
+.divider-add-buttons-image {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px;
+}
+
+.divider-add-buttons-1 {
+  width: 180px;
+  height: 1px;
+  background-color: #ebebeb;
+}
+
+/*   profile cart   start  */
+.divider-profile-account-cart {
+  display: flex;
+  width: 300px;
+  padding: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0px 16px 32px -12px rgba(14, 18, 27, 0.1);
+}
+
+.divider-profile-account-cart-header img {
+  width: 40px;
+  height: 40px;
+}
+
+.divider-profile-account-cart-header {
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  gap: 12px;
+  border-radius: 10px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.divider-profile-account-cart-header-left {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.divider-profile-account-cart-header-title {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.divider-profile-account-cart-header-title p {
+  font-size: 14px;
+  color: #171717;
+}
+
+.divider-profile-account-cart-header-title span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #5c5c5c;
+}
+
+.divider-profile-account-cart-header-pro {
+  display: flex;
+  padding: 2px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  border-radius: 999px;
+  background-color: #ffc0c5;
+  font-size: 12px;
+  color: #681219;
+  text-transform: uppercase;
+}
+
+.profile-account-cart-header-divider {
+  height: 1px;
+  width: 100%;
+  background-color: #ebebeb;
+}
+
+.divider-profile-dropdown-item {
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+}
+
+.divider-profile-dropdown-item p {
+  color: #171717;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.divider-profile-dropdown-item span {
+  color: #a3a3a3;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.divider-profile-dropdown-item-plan {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  padding: 8px;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.divider-profile-dropdown-item-plan p {
+  font-size: 14px;
+  color: #171717;
+}
+
+.divider-profile-dropdown-item-plan span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #5c5c5c;
+}
+
+.divider-profile-dropdown-item-plan-right {
+  display: flex;
+  padding: 6px;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  border-radius: 8px;
+  background-color: rgba(71, 108, 255, 0.1);
+}
+
+.divider-profile-dropdown-item-plan-right p {
+  color: #335cff !important;
+}
+
+/*   profile cart   end  */
+
+/*        contect    divider    end    */
