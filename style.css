@@ -3525,3 +3525,243 @@
 /*   profile cart   end  */
 
 /*        contect    divider    end    */
+
+/*     command-manu   start  */
+
+#example-command-manu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgba(51, 51, 51, 0.24);
+}
+
+.command-manu {
+  display: flex;
+  max-width: 600px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 16px;
+  margin: 50px 0;
+}
+
+.light-mode-command-manu {
+  border: 1px solid #ebebeb;
+  background-color: #fff;
+  box-shadow: 0px 16px 32px -12px rgba(14, 18, 27, 0.1);
+}
+
+.command-manu-header {
+  display: flex;
+  padding: 14px 20px;
+  align-items: center;
+  gap: 8px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.light-command-manu-header {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.command-manu-header-left,
+.command-manu-header-right {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.command-manu-header-right span {
+  display: flex;
+  padding: 2px 6px;
+  align-items: center;
+  gap: 4px;
+  border-radius: 4px;
+  border: 1px solid #ebebeb;
+  font-size: 12px;
+  color: #a3a3a3;
+}
+
+.command-manu-suggestion {
+  display: flex;
+  padding: 16px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+}
+
+.command-manu-suggestion-bottom {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.command-manu-suggestion-bottom div {
+  display: flex;
+  padding: 4px 4px 4px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  border-radius: 6px;
+  background-color: #f7f7f7;
+}
+
+.command-manu-suggestion-bottom div p {
+  font-size: 12px;
+  color: #5c5c5c;
+}
+
+.command-manu-search-content {
+  display: flex;
+  padding: 16px 8px 12px 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+}
+
+.command-manu-search-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  gap: 8px;
+  width: 100%;
+  font-size: 12px;
+  color: #5c5c5c;
+}
+
+.command-manu-search-item {
+  display: flex;
+  padding: 10px 12px;
+  align-items: center;
+  gap: 12px;
+  border-radius: 10px;
+}
+
+.command-manu-search-item p {
+  font-size: 14px;
+  color: #171717;
+  padding: 0 !important;
+}
+
+.command-manu-search-content p {
+  padding: 0 12px;
+}
+
+.command-manu-footer {
+  display: flex;
+  padding: 14px 20px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-top: 1px solid #ebebeb;
+  width: 100%;
+  font-size: 12px;
+}
+
+.command-manu-footer-left {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.command-manu-footer-left img {
+  padding: 2px;
+  border-radius: var(--radius-4, 4px);
+  border: 1px solid #ebebeb;
+  background-color: #f7f7f7;
+}
+
+.left-navigate-side {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.left-select-side {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.command-manu-right-side {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/*       */
+
+.command-manu-all-tools {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 10px;
+}
+
+.command-manu-tools {
+  padding: 10px;
+  border-right: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  border-left: 1px solid #ebebeb;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.command-manu-tools-title {
+  display: flex;
+  padding: 8px 10px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.command-manu-tools-title p {
+  color: #a3a3a3;
+}
+
+.command-manu-tools-item {
+  display: flex;
+  padding: 8px 10px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  color: #5c5c5c;
+}
+
+.command-manu-tools-item img {
+  height: 20px;
+  width: 20px;
+}
+
+.command-manu-tools-footer {
+  border: none !important;
+  padding: 5px 20px 20px 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .command-manu-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .command-manu {
+    margin: 30px 10px;
+  }
+
+  .command-manu-all-tools {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 10px;
+  }
+}
+
+/*     command-manu   end */
