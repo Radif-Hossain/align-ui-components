@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Picker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div id="date-picker-example">
+      <div class="date-picker">
+        <div class="date-picker-header">
+          <div class="date-picker-header-left">
+            <img src="/images/date-picker/time-line.svg" alt="" />
+            <p>22 October, 03:00 PM</p>
+          </div>
+          <div class="date-picker-header-right">
+            <img src="/images/date-picker/close-line.svg " alt="" />
+          </div>
+        </div>
+
+        <div class="date-picker-times">
+          <div class="date-picker-times-left">
+            <img src="/images/date-picker/sun-line.svg" alt="" />
+            <p>Tomorrow</p>
+          </div>
+          <div class="date-picker-header-right">
+            <span>Today</span>
+          </div>
+        </div>
+
+        <div class="date-picker-times">
+          <div class="date-picker-times-left">
+            <img src="/images/date-picker/calendar-line.svg" alt="" />
+            <p>Later this week</p>
+          </div>
+          <div class="date-picker-header-right">
+            <span>Thursday</span>
+          </div>
+        </div>
+
+        <div class="date-picker-times">
+          <div class="date-picker-times-left">
+            <img src="/images/date-picker/calendar-check-line.svg" alt="" />
+            <p>Next week</p>
+          </div>
+          <div class="date-picker-header-right">
+            <span>Mon, 29 October</span>
+          </div>
+        </div>
+
+        <div class="date-picker-times">
+          <div class="date-picker-times-left">
+            <img src="/images/date-picker/forbid-line.svg" alt="" />
+            <p>No date</p>
+          </div>
+          <div class="date-picker-header-right">
+            <span>Thursday</span>
+          </div>
+        </div>
+
+        <div class="date-picker-date-selector">
+          <img src="/images/date-picker/arrow-left-s-line.svg" alt="" />
+          <p>October 2025</p>
+          <img src="/images/date-picker/arrow-right-s-line.svg" alt="" />
+        </div>
+
+        <div class="date-picker-content">
+          <div class="date-picker-items">
+            <div class="date-picker-item">MO</div>
+            <div class="date-picker-item">TU</div>
+            <div class="date-picker-item">WE</div>
+            <div class="date-picker-item">TH</div>
+            <div class="date-picker-item">FR</div>
+            <div class="date-picker-item">SA</div>
+            <div class="date-picker-item">SU</div>
+          </div>
+
+          <div class="date-picker-items date-picker-items-number">
+            <div class="date-picker-item">1</div>
+            <div class="date-picker-item">2</div>
+            <div class="date-picker-item">3</div>
+            <div class="date-picker-item">4</div>
+            <div class="date-picker-item">5</div>
+            <div class="date-picker-item">6</div>
+            <div class="date-picker-item">7</div>
+          </div>
+
+          <div class="date-picker-items date-picker-items-number">
+            <div class="date-picker-item">8</div>
+            <div class="date-picker-item">9</div>
+            <div class="date-picker-item">10</div>
+            <div class="date-picker-item date-picker-item-blue">11</div>
+            <div class="date-picker-item">12</div>
+            <div class="date-picker-item">13</div>
+            <div class="date-picker-item">14</div>
+          </div>
+
+          <div class="date-picker-items date-picker-items-number">
+            <div class="date-picker-item">15</div>
+            <div class="date-picker-item">16</div>
+            <div class="date-picker-item">17</div>
+            <div class="date-picker-item">18</div>
+            <div class="date-picker-item">19</div>
+            <div class="date-picker-item">20</div>
+            <div class="date-picker-item">21</div>
+          </div>
+
+          <div class="date-picker-items date-picker-items-number">
+            <div class="date-picker-item">22</div>
+            <div class="date-picker-item">23</div>
+            <div class="date-picker-item">24</div>
+            <div class="date-picker-item">25</div>
+            <div class="date-picker-item">26</div>
+            <div class="date-picker-item">27</div>
+            <div class="date-picker-item">28</div>
+          </div>
+
+          <div class="date-picker-items date-picker-items-number">
+            <div class="date-picker-item">29</div>
+            <div class="date-picker-item">30</div>
+            <div class="date-picker-item">31</div>
+            <div class="date-picker-item date-picker-item-light">1</div>
+            <div class="date-picker-item date-picker-item-light">2</div>
+            <div class="date-picker-item date-picker-item-light">3</div>
+            <div class="date-picker-item date-picker-item-light">4</div>
+          </div>
+
+          <div class="date-picker-content-footer">
+            <button>Cancel</button>
+            <button>Apply</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- example 2  -->
+
+      <div class="date-picker-main">
+        <div class="date-picker-main-header">
+          <div class="date-picker-main-header-left">
+            <div class="date-picker-main-header-left-img">
+              <img src="/images/date-picker/time-line.svg" alt="" />
+            </div>
+
+            <div class="date-picker-main-header-left-text">
+              <p>Event Calendar</p>
+              <span>Schedule your team meetings and events easily</span>
+            </div>
+          </div>
+          <div class="date-picker-main-header-right">
+            <img src="/images/date-picker/close-line.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="date-picker-main-content">
+          <div class="date-picker-main-content-left">
+            <div class="date-picker-main-content-left-header">
+              <div>
+                <img src="/images/date-picker/arrow-left-s-line.svg" alt="" />
+              </div>
+              <p>January 2025</p>
+              <div>
+                <img src="/images/date-picker/arrow-right-s-line.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="date-picker-main-content-items">
+              <div
+                class="date-picker-main-content-item date-picker-main-content-item-light"
+              >
+                MO
+              </div>
+              <div
+                class="date-picker-main-content-item date-picker-main-content-item-light"
+              >
+                Tu
+              </div>
+              <div
+                class="date-picker-main-content-item date-picker-main-content-item-light"
+              >
+                WE
+              </div>
+              <div
+                class="date-picker-main-content-item date-picker-main-content-item-light"
+              >
+                TH
+              </div>
+              <div
+                class="date-picker-main-content-item date-picker-main-content-item-light"
+              >
+                FR
+              </div>
+              <div
+                class="date-picker-main-content-item date-picker-main-content-item-light"
+              >
+                SA
+              </div>
+              <div
+                class="date-picker-main-content-item date-picker-main-content-item-light"
+              >
+                SU
+              </div>
+            </div>
+
+            <div class="date-picker-main-content-items">
+              <div class="date-picker-main-content-item">1</div>
+              <div class="date-picker-main-content-item">2</div>
+              <div class="date-picker-main-content-item">3</div>
+              <div class="date-picker-main-content-item">4</div>
+              <div class="date-picker-main-content-item">5</div>
+              <div class="date-picker-main-content-item">6</div>
+              <div class="date-picker-main-content-item">7</div>
+            </div>
+
+            <div class="date-picker-main-content-items">
+              <div class="date-picker-main-content-item">8</div>
+              <div class="date-picker-main-content-item">9</div>
+              <div class="date-picker-main-content-item">10</div>
+              <div class="date-picker-main-content-item">11</div>
+              <div class="date-picker-main-content-item">12</div>
+              <div class="date-picker-main-content-item">13</div>
+              <div class="date-picker-main-content-item">14</div>
+            </div>
+
+            <div class="date-picker-main-content-items">
+              <div
+                class="date-picker-main-content-item date-picker-main-content-item-blue"
+              >
+                15
+              </div>
+              <div
+                class="date-picker-main-content-item date-picker-main-content-item-light-blue"
+              >
+                16
+              </div>
+              <div
+                class="date-picker-main-content-item date-picker-main-content-item-light-blue"
+              >
+                17
+              </div>
+              <div
+                class="date-picker-main-content-item date-picker-main-content-item-light-blue"
+              >
+                18
+              </div>
+              <div
+                class="date-picker-main-content-item date-picker-main-content-item-light-blue"
+              >
+                19
+              </div>
+              <div
+                class="date-picker-main-content-item date-picker-main-content-item-light-blue"
+              >
+                20
+              </div>
+              <div
+                class="date-picker-main-content-item date-picker-main-content-item-blue"
+              >
+                21
+              </div>
+            </div>
+
+            <div class="date-picker-main-content-items">
+              <div class="date-picker-main-content-item">22</div>
+              <div class="date-picker-main-content-item">23</div>
+              <div class="date-picker-main-content-item">24</div>
+              <div class="date-picker-main-content-item">25</div>
+              <div class="date-picker-main-content-item">26</div>
+              <div class="date-picker-main-content-item">27</div>
+              <div class="date-picker-main-content-item">28</div>
+            </div>
+
+            <div class="date-picker-main-content-items">
+              <div class="date-picker-main-content-item">29</div>
+              <div class="date-picker-main-content-item">30</div>
+              <div class="date-picker-main-content-item">31</div>
+              <div
+                class="date-picker-main-content-item date-picker-main-content-item-light"
+              >
+                1
+              </div>
+              <div
+                class="date-picker-main-content-item date-picker-main-content-item-light"
+              >
+                2
+              </div>
+              <div
+                class="date-picker-main-content-item date-picker-main-content-item-light"
+              >
+                3
+              </div>
+              <div
+                class="date-picker-main-content-item date-picker-main-content-item-light"
+              >
+                4
+              </div>
+            </div>
+          </div>
+
+          <div class="date-picker-main-content-right">
+            <div class="date-picker-main-content-right-items">
+              <div class="date-picker-main-content-right-input-item">
+                <p>Start date <span>*</span></p>
+                <div>
+                  <span>2025-01-15</span>
+                  <span>09.00 AM</span>
+                </div>
+              </div>
+
+              <div class="date-picker-main-content-right-input-item">
+                <p>End date <span>*</span></p>
+                <div>
+                  <span>2025-01-21</span>
+                  <span>09.00 AM</span>
+                </div>
+              </div>
+            </div>
+            <div class="date-picker-main-content-right-items-bottom">
+              <div class="date-picker-main-content-right-input-item">
+                <div style="border: none; justify-content: flex-start">
+                  <p>Maximum participants</p>
+                  <img src="/images/date-picker/info-custom-fill.svg" alt="" />
+                </div>
+
+                <div>
+                  <p>10</p>
+                </div>
+              </div>
+
+              <div class="date-picker-main-content-item-bottom">
+                <img src="/images/date-picker/Checkbox [1.1].svg" alt="" />
+                <p>Open to all departments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="date-picker-main-footer">
+          <p><span>Range: </span>January 15, 2025 - January 21, 2025</p>
+          <div>
+            <button>Cancel</button>
+            <button>Schedule meetings</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
