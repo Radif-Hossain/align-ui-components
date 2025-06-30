@@ -5051,3 +5051,125 @@
 }
 
 /*   filter end   */
+
+/*  key  components   start  */
+
+#key-components-example {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.key-components-mastercard {
+  display: flex;
+  width: 360px;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  border-radius: 12px;
+  border: 1px solid #ebebeb;
+  box-shadow: 0px 1px 2px 0px rgba(10, 13, 20, 0.03);
+}
+
+.key-components-mastercard-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  justify-content: flex-start;
+}
+
+.key-components-mastercard-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  align-items: center;
+}
+
+.key-components-mastercard-details-top {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.key-components-mastercard P {
+  font-size: 14px;
+  color: #171717;
+  font-weight: 600;
+}
+
+.key-components-mastercard span {
+  font-size: 12px;
+  color: #5c5c5c;
+}
+
+.key-components-mastercard-details-top div {
+  padding: 2px 8px;
+  font-size: 11px;
+  border-radius: 999px;
+  background: #c0d5ff;
+  color: #122368;
+}
+
+/*   password-strength   */
+
+.key-components-password-strength {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.key-components-items {
+  display: flex;
+  width: 300px;
+  padding-top: 6px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 14px;
+  color: #5c5c5c;
+}
+
+.key-components-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.key-components-label-bar {
+  height: 4px;
+  width: 30%;
+  border-radius: 1.2px;
+  background-color: #ebebeb;
+}
+
+.key-components-label-bar-red {
+  background-color: #fb3748;
+}
+
+.key-components-label-bar-orange {
+  background-color: #fa7319;
+}
+
+.key-components-label-bar-green {
+  background-color: #1fc16b;
+}
+
+@media screen and (max-width: 576px) {
+  .key-components-mastercard {
+    width: 90%;
+  }
+
+  .key-components-items {
+    width: 100%;
+  }
+}
+
+/*  key  components   end  */
